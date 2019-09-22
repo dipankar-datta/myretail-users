@@ -13,12 +13,10 @@
 
 
 -- Dumping database structure for myretail_users
-DROP DATABASE IF EXISTS `myretail_users`;
 CREATE DATABASE IF NOT EXISTS `myretail_users` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `myretail_users`;
 
 -- Dumping structure for table myretail_users.cities
-DROP TABLE IF EXISTS `cities`;
 CREATE TABLE IF NOT EXISTS `cities` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(120) DEFAULT NULL,
@@ -29,12 +27,11 @@ CREATE TABLE IF NOT EXISTS `cities` (
   KEY `id` (`id`),
   KEY `code` (`code`),
   KEY `name` (`name`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=532 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
 
 -- Data exporting was unselected.
 
 -- Dumping structure for table myretail_users.contact_details
-DROP TABLE IF EXISTS `contact_details`;
 CREATE TABLE IF NOT EXISTS `contact_details` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `primary_contact` varchar(30) DEFAULT '',
@@ -63,7 +60,6 @@ CREATE TABLE IF NOT EXISTS `contact_details` (
 -- Data exporting was unselected.
 
 -- Dumping structure for table myretail_users.countries
-DROP TABLE IF EXISTS `countries`;
 CREATE TABLE IF NOT EXISTS `countries` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(120) DEFAULT NULL,
@@ -73,12 +69,11 @@ CREATE TABLE IF NOT EXISTS `countries` (
   UNIQUE KEY `unique_name` (`name`),
   KEY `key_id` (`id`),
   KEY `key_code` (`code`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
 
 -- Data exporting was unselected.
 
 -- Dumping structure for table myretail_users.country_state_city_map
-DROP TABLE IF EXISTS `country_state_city_map`;
 CREATE TABLE IF NOT EXISTS `country_state_city_map` (
   `country` int(11) DEFAULT NULL,
   `state` int(11) DEFAULT NULL,
@@ -94,7 +89,6 @@ CREATE TABLE IF NOT EXISTS `country_state_city_map` (
 -- Data exporting was unselected.
 
 -- Dumping structure for table myretail_users.login
-DROP TABLE IF EXISTS `login`;
 CREATE TABLE IF NOT EXISTS `login` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `password` varchar(50) DEFAULT NULL,
@@ -110,22 +104,20 @@ CREATE TABLE IF NOT EXISTS `login` (
 -- Data exporting was unselected.
 
 -- Dumping structure for table myretail_users.roles
-DROP TABLE IF EXISTS `roles`;
 CREATE TABLE IF NOT EXISTS `roles` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(160) DEFAULT NULL,
   `code` varchar(10) DEFAULT NULL,
+  `name` varchar(160) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `unique_code` (`code`),
   UNIQUE KEY `unique_name` (`name`),
   KEY `id` (`id`),
   KEY `code` (`code`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
 
 -- Data exporting was unselected.
 
 -- Dumping structure for table myretail_users.states
-DROP TABLE IF EXISTS `states`;
 CREATE TABLE IF NOT EXISTS `states` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(120) DEFAULT NULL,
@@ -136,16 +128,16 @@ CREATE TABLE IF NOT EXISTS `states` (
   KEY `id` (`id`),
   KEY `name` (`name`),
   KEY `code` (`code`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
 
 -- Data exporting was unselected.
 
 -- Dumping structure for table myretail_users.users
-DROP TABLE IF EXISTS `users`;
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `code` varchar(30) DEFAULT NULL,
   `first_name` varchar(80) DEFAULT NULL,
+  `public_id` varchar(200) DEFAULT NULL,
   `last_name` varchar(80) DEFAULT NULL,
   `role` int(11) DEFAULT '0',
   `creation_time` datetime DEFAULT NULL,
@@ -160,7 +152,6 @@ CREATE TABLE IF NOT EXISTS `users` (
 -- Data exporting was unselected.
 
 -- Dumping structure for table myretail_users.user_contact
-DROP TABLE IF EXISTS `user_contact`;
 CREATE TABLE IF NOT EXISTS `user_contact` (
   `user` int(11) DEFAULT NULL,
   `contact` int(11) DEFAULT NULL,
