@@ -2,6 +2,7 @@ package com.dipankar.myretail.services.impl;
 
 import com.dipankar.myretail.data.entities.User;
 import com.dipankar.myretail.data.repositories.UserRepository;
+import com.dipankar.myretail.services.RoleService;
 import com.dipankar.myretail.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,6 +15,9 @@ public class UserServiceImpl  implements UserService {
 
     @Autowired
     private UserRepository userRepository;
+
+    @Autowired
+    private RoleService roleService;
 
 
     @Override

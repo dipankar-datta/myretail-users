@@ -1,5 +1,6 @@
 package com.dipankar.myretail.data.entities;
 
+import lombok.Data;
 import org.springframework.web.bind.annotation.Mapping;
 
 import javax.persistence.*;
@@ -8,6 +9,7 @@ import javax.validation.constraints.Size;
 import java.time.LocalDateTime;
 import java.util.Set;
 
+@Data
 @Entity
 @Table(name = "users")
 public class User {
@@ -38,6 +40,7 @@ public class User {
     private LocalDateTime updationTime;
 
     @OneToMany
+    @NotEmpty(message = "User's contact details is required")
     @JoinTable(
             name = "user_contact",
             joinColumns = {@JoinColumn(name = "user")},

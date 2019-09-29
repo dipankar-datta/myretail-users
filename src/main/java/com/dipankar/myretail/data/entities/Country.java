@@ -33,12 +33,4 @@ public class Country {
             inverseJoinColumns = {@JoinColumn(name = "state")}
     )
     private Set<State> state;
-
-/*    @OneToMany
-    @JoinTable(
-            name = "country_state_map",
-            joinColumns = {@JoinColumn(name = "country")},
-            inverseJoinColumns = {@JoinColumn(name = "state")}
-    )
-    private Set<State> state;*/
 }

@@ -1,6 +1,8 @@
 package com.dipankar.myretail.data.entities;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
@@ -32,5 +34,5 @@ public class State {
             joinColumns = {@JoinColumn(name = "state")},
             inverseJoinColumns = {@JoinColumn(name = "city")}
     )
-    private Set<State> cities;
+    private Set<City> cities;
 }
