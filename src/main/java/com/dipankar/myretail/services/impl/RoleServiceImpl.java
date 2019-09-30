@@ -6,6 +6,7 @@ import com.dipankar.myretail.services.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 
@@ -16,12 +17,17 @@ public class RoleServiceImpl implements RoleService {
     private RoleRepository roleRepository;
 
     @Override
-    public Set<Role> list() {
-        return roleRepository.list();
+    public List<Role> list() {
+        return roleRepository.findAll();
     }
 
     @Override
-    public Role save(Role item) {
+    public Role create(Role item) {
+        return roleRepository.save(item);
+    }
+
+    @Override
+    public Role update(Role item) {
         return roleRepository.save(item);
     }
 

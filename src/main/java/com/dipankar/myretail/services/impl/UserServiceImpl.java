@@ -1,14 +1,16 @@
 package com.dipankar.myretail.services.impl;
 
-import com.dipankar.myretail.data.entities.User;
-import com.dipankar.myretail.data.repositories.UserRepository;
+import com.dipankar.myretail.data.entities.*;
+import com.dipankar.myretail.data.repositories.*;
+import com.dipankar.myretail.rest.dto.UserDTO;
 import com.dipankar.myretail.services.RoleService;
 import com.dipankar.myretail.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
-import java.util.Set;
+import java.util.stream.Collectors;
 
 @Service
 public class UserServiceImpl  implements UserService {
@@ -17,17 +19,63 @@ public class UserServiceImpl  implements UserService {
     private UserRepository userRepository;
 
     @Autowired
-    private RoleService roleService;
+    private RoleRepository roleRepository;
+
+    @Autowired
+    private CountryRepository countryRepository;
+
+    @Autowired
+    private StateRepository stateRepository;
+
+    @Autowired
+    private CityRepository cityRepository;
+
+    @Autowired
+    private ContactDetailsRepository contactDetailsRepository;
 
 
     @Override
-    public Set<User> list() {
-        return userRepository.list();
+    public List<User> list() {
+        return userRepository.findAll();
     }
 
     @Override
-    public User save(User item) {
+    public User create(User item) {
         return userRepository.save(item);
+    }
+
+    @Override
+    public User create(UserDTO dto) {
+        Role role = roleRepository.getOne(dto.getRoleId());
+        User user = dto.toEntity();
+        user.setRole(role);
+
+        List<ContactDetails> savedContacts =
+                dto.getContacts()
+                    .stream()
+                    .map(contactDetailsDTO -> {
+                    ContactDetails contactDetails = contactDetailsDTO.toEntity();
+                    contactDetails.setCountry(countryRepository.getOne(contactDetailsDTO.getCountryId()));
+                    contactDetails.setState(stateRepository.getOne(contactDetailsDTO.getStateId()));
+                    contactDetails.setCity(cityRepository.getOne(contactDetailsDTO.getCityId()));
+                    contactDetails.setIsPrimary(
+                            contactDetailsDTO.getIsPrimary() == null ? "f" : contactDetailsDTO.getIsPrimary()
+                    );
+                    return contactDetailsDTO.toEntity();
+                }).collect(Collectors.toList());
+
+        user.setContactDetails(savedContacts);
+        return userRepository.save(user);
+    }
+
+    @Override
+    public User update(User item) {
+        return userRepository.save(item);
+    }
+
+    @Override
+    public User update(UserDTO dto) {
+        return create(dto);
     }
 
     @Override

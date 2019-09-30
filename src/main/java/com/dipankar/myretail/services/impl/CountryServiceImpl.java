@@ -6,6 +6,7 @@ import com.dipankar.myretail.services.CountryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 
@@ -16,12 +17,17 @@ public class CountryServiceImpl implements CountryService {
     private CountryRepository countryRepository;
 
     @Override
-    public Set<Country> list() {
-        return countryRepository.list();
+    public List<Country> list() {
+        return countryRepository.findAll();
     }
 
     @Override
-    public Country save(Country item) {
+    public Country create(Country item) {
+        return countryRepository.save(item);
+    }
+
+    @Override
+    public Country update(Country item) {
         return countryRepository.save(item);
     }
 

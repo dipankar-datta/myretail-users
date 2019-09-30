@@ -1,15 +1,17 @@
 package com.dipankar.myretail.data.entities;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
-import org.springframework.web.bind.annotation.Mapping;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.time.LocalDateTime;
-import java.util.Set;
+import java.util.List;
 
 @Data
+@AllArgsConstructor
 @Entity
 @Table(name = "users")
 public class User {
@@ -30,7 +32,7 @@ public class User {
 
     @OneToOne
     @JoinColumn(name = "role")
-    @NotEmpty(message = "User role is required")
+    @NotNull(message = "User role is required")
     private Role role;
 
     @Column(name = "creation_time")
@@ -39,12 +41,12 @@ public class User {
     @Column(name = "updation_time")
     private LocalDateTime updationTime;
 
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL)
     @NotEmpty(message = "User's contact details is required")
     @JoinTable(
             name = "user_contact",
             joinColumns = {@JoinColumn(name = "user")},
             inverseJoinColumns = {@JoinColumn(name = "contact")}
             )
-    private Set<ContactDetails> contactDetails;
+    private List<ContactDetails> contactDetails;
 }

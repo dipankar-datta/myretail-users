@@ -6,8 +6,8 @@ import com.dipankar.myretail.services.CityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
-import java.util.Set;
 
 @Service
 public class CityServiceImpl implements CityService {
@@ -16,12 +16,17 @@ public class CityServiceImpl implements CityService {
     private CityRepository cityRepository;
 
     @Override
-    public Set<City> list() {
-        return cityRepository.list();
+    public List<City> list() {
+        return cityRepository.findAll();
     }
 
     @Override
-    public City save(City item) {
+    public City create(City item) {
+        return cityRepository.save(item);
+    }
+
+    @Override
+    public City update(City item) {
         return cityRepository.save(item);
     }
 

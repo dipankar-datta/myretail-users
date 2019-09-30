@@ -5,7 +5,7 @@ import lombok.Data;
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
-import java.util.Set;
+import java.util.List;
 
 @Data
 @Entity
@@ -32,5 +32,5 @@ public class Country {
             joinColumns = {@JoinColumn(name = "country")},
             inverseJoinColumns = {@JoinColumn(name = "state")}
     )
-    private Set<State> state;
+    private List<State> state;
 }

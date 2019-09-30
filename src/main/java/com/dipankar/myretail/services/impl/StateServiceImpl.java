@@ -6,6 +6,7 @@ import com.dipankar.myretail.services.StateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 
@@ -16,12 +17,17 @@ public class StateServiceImpl implements StateService {
     private StateRepository stateRepository;
 
     @Override
-    public Set<State> list() {
-        return stateRepository.list();
+    public List<State> list() {
+        return stateRepository.findAll();
     }
 
     @Override
-    public State save(State item) {
+    public State create(State item) {
+        return stateRepository.save(item);
+    }
+
+    @Override
+    public State update(State item) {
         return stateRepository.save(item);
     }
 

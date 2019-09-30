@@ -1,13 +1,15 @@
 package com.dipankar.myretail.services;
 
+import java.util.List;
 import java.util.Optional;
-import java.util.Set;
 
 public interface BasicCrudService<T> {
 
-    Set<T> list();
+    List<T> list();
 
-    T save(T item);
+    T create(T item);
+
+    T update(T item);
 
     <S extends T> Iterable<S> saveAll(Iterable<S> items);
 
