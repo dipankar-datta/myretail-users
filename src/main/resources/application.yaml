@@ -4,3 +4,6 @@ spring:
     url: jdbc:mysql://localhost:3306/myretail_users?servetTimezone=UTC
     username: root
     password: root
+  jackson:
+    serialization:
+      fail-on-empty-beans: false

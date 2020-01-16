@@ -56,9 +56,6 @@ public class ContactDetailsDTO {
     @JsonProperty("city")
     private Long cityId;
 
-    @JsonProperty("user")
-    private Long userId;
-
     @JsonProperty("isPrimary")
     private String isPrimary;
 
@@ -71,7 +68,6 @@ public class ContactDetailsDTO {
                 addressLine1,
                 addressLine2,
                 postalCode,
-                null,
                 null,
                 null,
                 null,
@@ -91,7 +87,6 @@ public class ContactDetailsDTO {
                 contactDetails.getCountry().getId(),
                 contactDetails.getState().getId(),
                 contactDetails.getCity().getId(),
-                contactDetails.getUser().getId(),
                 contactDetails.getIsPrimary()
         );
     }

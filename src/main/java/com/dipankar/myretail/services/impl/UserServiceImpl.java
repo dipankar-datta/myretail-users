@@ -8,6 +8,7 @@ import com.dipankar.myretail.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -45,10 +46,12 @@ public class UserServiceImpl  implements UserService {
     }
 
     @Override
-    public User create(UserDTO dto) {
+    public UserDTO create(UserDTO dto) {
         Role role = roleRepository.getOne(dto.getRoleId());
         User user = dto.toEntity();
         user.setRole(role);
+        user.setCreationTime(LocalDateTime.now());
+        user.setUpdationTime(LocalDateTime.now());
 
         List<ContactDetails> savedContacts =
                 dto.getContacts()
@@ -61,11 +64,10 @@ public class UserServiceImpl  implements UserService {
                     contactDetails.setIsPrimary(
                             contactDetailsDTO.getIsPrimary() == null ? "f" : contactDetailsDTO.getIsPrimary()
                     );
-                    return contactDetailsDTO.toEntity();
+                    return contactDetails;
                 }).collect(Collectors.toList());
-
         user.setContactDetails(savedContacts);
-        return userRepository.save(user);
+        return UserDTO.entityToDto(userRepository.save(user));
     }
 
     @Override
@@ -74,7 +76,7 @@ public class UserServiceImpl  implements UserService {
     }
 
     @Override
-    public User update(UserDTO dto) {
+    public UserDTO update(UserDTO dto) {
         return create(dto);
     }
 

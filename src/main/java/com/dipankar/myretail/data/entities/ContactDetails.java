@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import javax.validation.constraints.Email;
@@ -13,6 +14,7 @@ import java.io.Serializable;
 
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name = "contact_details")
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -70,10 +72,6 @@ public class ContactDetails implements Serializable {
     @OneToOne
     @JoinColumn(name = "city")
     private City city;
-
-    @ManyToOne
-    @JoinColumn(name = "user")
-    private User user;
 
     @Column(name = "is_primary")
     private String isPrimary;
