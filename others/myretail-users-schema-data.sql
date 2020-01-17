@@ -33,1073 +33,1077 @@ CREATE TABLE IF NOT EXISTS `cities` (
   KEY `id` (`id`),
   KEY `code` (`code`),
   KEY `name` (`name`)
-) ENGINE=InnoDB AUTO_INCREMENT=532 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=534 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
 
 -- Dumping data for table myretail_users.cities: ~531 rows (approximately)
 DELETE FROM `cities`;
 /*!40000 ALTER TABLE `cities` DISABLE KEYS */;
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(1, 'Woonsocket', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(1, 'Woonsocket', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(2, 'Providence', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(2, 'Providence', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(3, 'Warwick', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(3, 'Warwick', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(4, 'Cranston', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(4, 'Cranston', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(5, 'Washington', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(5, 'Washington', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(6, 'Bullhead City', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(6, 'Bullhead City', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(7, 'Mesa', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(7, 'Mesa', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(8, 'Yuma', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(8, 'Yuma', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(9, 'Peoria', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(9, 'Peoria', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(10, 'Gilbert', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(10, 'Gilbert', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(11, 'Glendale', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(11, 'Glendale', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(12, 'Phoenix', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(12, 'Phoenix', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(13, 'Scottsdale', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(13, 'Scottsdale', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(14, 'Tucson', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(14, 'Tucson', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(15, 'Avondale', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(15, 'Avondale', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(16, 'Chandler', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(16, 'Chandler', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(17, 'Sierra Vista', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(17, 'Sierra Vista', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(18, 'Tempe', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(18, 'Tempe', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(19, 'San Luis Obispo', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(19, 'San Luis Obispo', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(20, 'Anaheim', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(20, 'Anaheim', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(21, 'Oceanside', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(21, 'Oceanside', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(22, 'San Gabriel', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(22, 'San Gabriel', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(23, 'Lakewood', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(23, 'Lakewood', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(24, 'Whittier', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(24, 'Whittier', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(25, 'Lancaster', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(25, 'Lancaster', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(26, 'Chula Vista', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(26, 'Chula Vista', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(27, 'Mission Viejo', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(27, 'Mission Viejo', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(28, 'Citrus Heights', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(28, 'Citrus Heights', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(29, 'Redlands', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(29, 'Redlands', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(30, 'Yucaipa', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(30, 'Yucaipa', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(31, 'Santa Barbara', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(31, 'Santa Barbara', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(32, 'Bakersfield', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(32, 'Bakersfield', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(33, 'Fresno', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(33, 'Fresno', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(34, 'Long Beach', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(34, 'Long Beach', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(35, 'La Mesa', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(35, 'La Mesa', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(36, 'Dublin', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(36, 'Dublin', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(37, 'Fairfield', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(37, 'Fairfield', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(38, 'Temecula', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(38, 'Temecula', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(39, 'Vallejo', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(39, 'Vallejo', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(40, 'Hesperia', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(40, 'Hesperia', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(41, 'Woodland', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(41, 'Woodland', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(42, 'Lodi', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(42, 'Lodi', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(43, 'Visalia', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(43, 'Visalia', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(44, 'Vacaville', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(44, 'Vacaville', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(45, 'Santa Ana', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(45, 'Santa Ana', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(46, 'Escondido', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(46, 'Escondido', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(47, 'Pico Rivera', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(47, 'Pico Rivera', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(48, 'San Jose', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(48, 'San Jose', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(49, 'Encinitas', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(49, 'Encinitas', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(50, 'Thousand Oaks', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(50, 'Thousand Oaks', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(51, 'Santa Clara', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(51, 'Santa Clara', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(52, 'Morgan Hill', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(52, 'Morgan Hill', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(53, 'Salinas', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(53, 'Salinas', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(54, 'Torrance', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(54, 'Torrance', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(55, 'San Clemente', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(55, 'San Clemente', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(56, 'Huntington Beach', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(56, 'Huntington Beach', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(57, 'Pomona', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(57, 'Pomona', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(58, 'San Bernardino', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(58, 'San Bernardino', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(59, 'Sacramento', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(59, 'Sacramento', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(60, 'Murrieta', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(60, 'Murrieta', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(61, 'Redondo Beach', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(61, 'Redondo Beach', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(62, 'Redding', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(62, 'Redding', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(63, 'Brentwood', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(63, 'Brentwood', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(64, 'Burbank', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(64, 'Burbank', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(65, 'Antioch', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(65, 'Antioch', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(66, 'Oxnard', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(66, 'Oxnard', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(67, 'Danville', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(67, 'Danville', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(68, 'Moreno Valley', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(68, 'Moreno Valley', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(69, 'Coachella', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(69, 'Coachella', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(70, 'Apple Valley', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(70, 'Apple Valley', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(71, 'Ontario', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(71, 'Ontario', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(72, 'El Cajon', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(72, 'El Cajon', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(73, 'Los Angeles', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(73, 'Los Angeles', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(74, 'Lake Forest', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(74, 'Lake Forest', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(75, 'San Mateo', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(75, 'San Mateo', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(76, 'Riverside', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(76, 'Riverside', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(77, 'Lake Elsinore', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(77, 'Lake Elsinore', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(78, 'Stockton', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(78, 'Stockton', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(79, 'Westminster', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(79, 'Westminster', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(80, 'Manteca', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(80, 'Manteca', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(81, 'Laguna Niguel', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(81, 'Laguna Niguel', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(82, 'La Quinta', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(82, 'La Quinta', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(83, 'Camarillo', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(83, 'Camarillo', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(84, 'Roseville', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(84, 'Roseville', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(85, 'Sunnyvale', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(85, 'Sunnyvale', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(86, 'Oakland', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(86, 'Oakland', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(87, 'Montebello', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(87, 'Montebello', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(88, 'Rancho Cucamonga', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(88, 'Rancho Cucamonga', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(89, 'Chico', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(89, 'Chico', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(90, 'Santa Maria', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(90, 'Santa Maria', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(91, 'Davis', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(91, 'Davis', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(92, 'San Francisco', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(92, 'San Francisco', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(93, 'Pasadena', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(93, 'Pasadena', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(94, 'Modesto', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(94, 'Modesto', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(95, 'Redwood City', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(95, 'Redwood City', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(96, 'Concord', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(96, 'Concord', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(97, 'San Diego', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(97, 'San Diego', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(98, 'Costa Mesa', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(98, 'Costa Mesa', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(99, 'Inglewood', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(99, 'Inglewood', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(100, 'Helena', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(100, 'Helena', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(101, 'Missoula', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(101, 'Missoula', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(102, 'Bozeman', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(102, 'Bozeman', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(103, 'Great Falls', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(103, 'Great Falls', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(104, 'Billings', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(104, 'Billings', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(105, 'Holland', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(105, 'Holland', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(106, 'Rochester Hills', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(106, 'Rochester Hills', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(107, 'Detroit', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(107, 'Detroit', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(108, 'Taylor', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(108, 'Taylor', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(109, 'Lansing', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(109, 'Lansing', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(110, 'Grand Rapids', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(110, 'Grand Rapids', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(111, 'Mount Pleasant', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(111, 'Mount Pleasant', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(112, 'Ann Arbor', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(112, 'Ann Arbor', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(113, 'Oak Park', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(113, 'Oak Park', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(114, 'Jackson', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(114, 'Jackson', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(115, 'Sterling Heights', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(115, 'Sterling Heights', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(116, 'Midland', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(116, 'Midland', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(117, 'Dearborn Heights', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(117, 'Dearborn Heights', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(118, 'Westland', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(118, 'Westland', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(119, 'Royal Oak', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(119, 'Royal Oak', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(120, 'Dearborn', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(120, 'Dearborn', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(121, 'Saginaw', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(121, 'Saginaw', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(122, 'Lincoln Park', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(122, 'Lincoln Park', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(123, 'Canton', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(123, 'Canton', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(124, 'Trenton', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(124, 'Trenton', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(125, 'Rochester', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(125, 'Rochester', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(126, 'Lakeville', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(126, 'Lakeville', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(127, 'Saint Paul', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(127, 'Saint Paul', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(128, 'Saint Cloud', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(128, 'Saint Cloud', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(129, 'Cottage Grove', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(129, 'Cottage Grove', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(130, 'Moorhead', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(130, 'Moorhead', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(131, 'Coon Rapids', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(131, 'Coon Rapids', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(132, 'Eagan', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(132, 'Eagan', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(133, 'Minneapolis', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(133, 'Minneapolis', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(134, 'Woodbury', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(134, 'Woodbury', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(135, 'Maple Grove', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(135, 'Maple Grove', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(136, 'Chester', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(136, 'Chester', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(137, 'York', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(137, 'York', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(138, 'Allentown', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(138, 'Allentown', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(139, 'Reading', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(139, 'Reading', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(140, 'Bethlehem', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(140, 'Bethlehem', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(141, 'Altoona', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(141, 'Altoona', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(142, 'Philadelphia', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(142, 'Philadelphia', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(143, 'Dover', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(143, 'Dover', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(144, 'Newark', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(144, 'Newark', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(145, 'Wilmington', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(145, 'Wilmington', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(146, 'Des Moines', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(146, 'Des Moines', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(147, 'Urbandale', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(147, 'Urbandale', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(148, 'Burlington', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(148, 'Burlington', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(149, 'Dubuque', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(149, 'Dubuque', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(150, 'Marion', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(150, 'Marion', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(151, 'Waterloo', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(151, 'Waterloo', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(152, 'Cedar Rapids', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(152, 'Cedar Rapids', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(153, 'Iowa City', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(153, 'Iowa City', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(154, 'Atlantic City', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(154, 'Atlantic City', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(155, 'New Brunswick', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(155, 'New Brunswick', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(156, 'Clifton', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(156, 'Clifton', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(157, 'Passaic', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(157, 'Passaic', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(158, 'Perth Amboy', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(158, 'Perth Amboy', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(159, 'Orange', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(159, 'Orange', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(160, 'Westfield', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(160, 'Westfield', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(161, 'Linden', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(161, 'Linden', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(162, 'Paterson', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(162, 'Paterson', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(163, 'Bridgeton', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(163, 'Bridgeton', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(164, 'Bayonne', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(164, 'Bayonne', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(165, 'Belleville', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(165, 'Belleville', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(166, 'East Orange', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(166, 'East Orange', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(167, 'Plainfield', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(167, 'Plainfield', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(168, 'Morristown', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(168, 'Morristown', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(169, 'Hackensack', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(169, 'Hackensack', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(170, 'Vineland', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(170, 'Vineland', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(171, 'Gulfport', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(171, 'Gulfport', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(172, 'Hattiesburg', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(172, 'Hattiesburg', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(173, 'Southaven', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(173, 'Southaven', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(174, 'Las Cruces', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(174, 'Las Cruces', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(175, 'Carlsbad', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(175, 'Carlsbad', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(176, 'Santa Fe', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(176, 'Santa Fe', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(177, 'Clovis', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(177, 'Clovis', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(178, 'Albuquerque', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(178, 'Albuquerque', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(179, 'Rio Rancho', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(179, 'Rio Rancho', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(180, 'Farmington', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(180, 'Farmington', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(181, 'Danbury', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(181, 'Danbury', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(182, 'Waterbury', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(182, 'Waterbury', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(183, 'Milford', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(183, 'Milford', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(184, 'Bristol', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(184, 'Bristol', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(185, 'Middletown', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(185, 'Middletown', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(186, 'Norwich', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(186, 'Norwich', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(187, 'Shelton', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(187, 'Shelton', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(188, 'Meriden', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(188, 'Meriden', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(189, 'Manchester', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(189, 'Manchester', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(190, 'Lake Charles', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(190, 'Lake Charles', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(191, 'Lafayette', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(191, 'Lafayette', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(192, 'Kenner', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(192, 'Kenner', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(193, 'Monroe', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(193, 'Monroe', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(194, 'Bossier City', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(194, 'Bossier City', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(195, 'Newport News', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(195, 'Newport News', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(196, 'Charlottesville', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(196, 'Charlottesville', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(197, 'Waynesboro', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(197, 'Waynesboro', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(198, 'Virginia Beach', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(198, 'Virginia Beach', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(199, 'Hampton', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(199, 'Hampton', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(200, 'Suffolk', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(200, 'Suffolk', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(201, 'Harrisonburg', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(201, 'Harrisonburg', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(202, 'Springfield', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(202, 'Springfield', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(203, 'Richmond', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(203, 'Richmond', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(204, 'Arlington', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(204, 'Arlington', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(205, 'Alexandria', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(205, 'Alexandria', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(206, 'Salem', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(206, 'Salem', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(207, 'Chesapeake', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(207, 'Chesapeake', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(208, 'Pocatello', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(208, 'Pocatello', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(209, 'Lewiston', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(209, 'Lewiston', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(210, 'Boise', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(210, 'Boise', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(211, 'Twin Falls', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(211, 'Twin Falls', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(212, 'Caldwell', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(212, 'Caldwell', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(213, 'Meridian', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(213, 'Meridian', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(214, 'Chattanooga', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(214, 'Chattanooga', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(215, 'Franklin', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(215, 'Franklin', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(216, 'Murfreesboro', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(216, 'Murfreesboro', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(217, 'Nashville', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(217, 'Nashville', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(218, 'Hendersonville', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(218, 'Hendersonville', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(219, 'Columbia', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(219, 'Columbia', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(220, 'Johnson City', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(220, 'Johnson City', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(221, 'Lebanon', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(221, 'Lebanon', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(222, 'Knoxville', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(222, 'Knoxville', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(223, 'Memphis', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(223, 'Memphis', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(224, 'Clarksville', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(224, 'Clarksville', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(225, 'Bartlett', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(225, 'Bartlett', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(226, 'Smyrna', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(226, 'Smyrna', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(227, 'Bangor', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(227, 'Bangor', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(228, 'Greensboro', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(228, 'Greensboro', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(229, 'Charlotte', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(229, 'Charlotte', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(230, 'Fayetteville', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(230, 'Fayetteville', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(231, 'Greenville', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(231, 'Greenville', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(232, 'Raleigh', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(232, 'Raleigh', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(233, 'Wilson', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(233, 'Wilson', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(234, 'Chapel Hill', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(234, 'Chapel Hill', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(235, 'Gastonia', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(235, 'Gastonia', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(236, 'Goldsboro', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(236, 'Goldsboro', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(237, 'Cary', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(237, 'Cary', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(238, 'Asheville', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(238, 'Asheville', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(239, 'Thomasville', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(239, 'Thomasville', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(240, 'Jacksonville', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(240, 'Jacksonville', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(241, 'Durham', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(241, 'Durham', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(242, 'Hickory', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(242, 'Hickory', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(243, 'Cheyenne', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(243, 'Cheyenne', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(244, 'Bloomington', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(244, 'Bloomington', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(245, 'New Castle', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(245, 'New Castle', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(246, 'Noblesville', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(246, 'Noblesville', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(247, 'Portage', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(247, 'Portage', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(248, 'Lawrence', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(248, 'Lawrence', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(249, 'New Albany', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(249, 'New Albany', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(250, 'Mishawaka', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(250, 'Mishawaka', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(251, 'Elkhart', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(251, 'Elkhart', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(252, 'La Porte', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(252, 'La Porte', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(253, 'Columbus', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(253, 'Columbus', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(254, 'South Bend', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(254, 'South Bend', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(255, 'Greenwood', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(255, 'Greenwood', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(256, 'Indianapolis', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(256, 'Indianapolis', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(257, 'Florence', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(257, 'Florence', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(258, 'Rock Hill', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(258, 'Rock Hill', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(259, 'Summerville', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(259, 'Summerville', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(260, 'North Charleston', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(260, 'North Charleston', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(261, 'Grand Island', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(261, 'Grand Island', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(262, 'Omaha', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(262, 'Omaha', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(263, 'Norfolk', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(263, 'Norfolk', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(264, 'Fremont', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(264, 'Fremont', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(265, 'Olympia', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(265, 'Olympia', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(266, 'Vancouver', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(266, 'Vancouver', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(267, 'Redmond', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(267, 'Redmond', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(268, 'Longview', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(268, 'Longview', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(269, 'Renton', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(269, 'Renton', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(270, 'Auburn', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(270, 'Auburn', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(271, 'Everett', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(271, 'Everett', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(272, 'Seattle', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(272, 'Seattle', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(273, 'Bellevue', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(273, 'Bellevue', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(274, 'Spokane', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(274, 'Spokane', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(275, 'Covington', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(275, 'Covington', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(276, 'Bellingham', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(276, 'Bellingham', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(277, 'Marysville', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(277, 'Marysville', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(278, 'Pasco', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(278, 'Pasco', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(279, 'Kent', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(279, 'Kent', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(280, 'Edmonds', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(280, 'Edmonds', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(281, 'Wheeling', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(281, 'Wheeling', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(282, 'Marlborough', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(282, 'Marlborough', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(283, 'Leominster', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(283, 'Leominster', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(284, 'Holyoke', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(284, 'Holyoke', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(285, 'Cambridge', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(285, 'Cambridge', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(286, 'Quincy', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(286, 'Quincy', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(287, 'Revere', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(287, 'Revere', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(288, 'Beverly', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(288, 'Beverly', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(289, 'Lowell', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(289, 'Lowell', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(290, 'Andover', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(290, 'Andover', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(291, 'New Bedford', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(291, 'New Bedford', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(292, 'Malden', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(292, 'Malden', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(293, 'Independence', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(293, 'Independence', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(294, 'Saint Charles', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(294, 'Saint Charles', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(295, 'Saint Louis', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(295, 'Saint Louis', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(296, 'Saint Peters', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(296, 'Saint Peters', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(297, 'Gladstone', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(297, 'Gladstone', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(298, 'Kirkwood', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(298, 'Kirkwood', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(299, 'Jefferson City', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(299, 'Jefferson City', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(300, 'Las Vegas', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(300, 'Las Vegas', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(301, 'Reno', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(301, 'Reno', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(302, 'North Las Vegas', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(302, 'North Las Vegas', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(303, 'Henderson', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(303, 'Henderson', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(304, 'Sparks', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(304, 'Sparks', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(305, 'Murray', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(305, 'Murray', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(306, 'Bowling Green', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(306, 'Bowling Green', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(307, 'Louisville', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(307, 'Louisville', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(308, 'Owensboro', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(308, 'Owensboro', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(309, 'Georgetown', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(309, 'Georgetown', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(310, 'Troy', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(310, 'Troy', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(311, 'Hempstead', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(311, 'Hempstead', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(312, 'Utica', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(312, 'Utica', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(313, 'Yonkers', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(313, 'Yonkers', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(314, 'Jamestown', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(314, 'Jamestown', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(315, 'Rome', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(315, 'Rome', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(316, 'Watertown', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(316, 'Watertown', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(317, 'Lindenhurst', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(317, 'Lindenhurst', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(318, 'Mount Vernon', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(318, 'Mount Vernon', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(319, 'Niagara Falls', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(319, 'Niagara Falls', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(320, 'New York City', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(320, 'New York City', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(321, 'New Rochelle', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(321, 'New Rochelle', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(322, 'Freeport', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(322, 'Freeport', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(323, 'Buffalo', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(323, 'Buffalo', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(324, 'Rapid City', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(324, 'Rapid City', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(325, 'Sioux Falls', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(325, 'Sioux Falls', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(326, 'Aberdeen', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(326, 'Aberdeen', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(327, 'Wichita', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(327, 'Wichita', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(328, 'Overland Park', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(328, 'Overland Park', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(329, 'Olathe', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(329, 'Olathe', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(330, 'Manhattan', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(330, 'Manhattan', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(331, 'Garden City', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(331, 'Garden City', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(332, 'Fort Lauderdale', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(332, 'Fort Lauderdale', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(333, 'Port Saint Lucie', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(333, 'Port Saint Lucie', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(334, 'Saint Petersburg', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(334, 'Saint Petersburg', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(335, 'Homestead', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(335, 'Homestead', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(336, 'Coral Springs', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(336, 'Coral Springs', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(337, 'Pompano Beach', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(337, 'Pompano Beach', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(338, 'Tamarac', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(338, 'Tamarac', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(339, 'Miami', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(339, 'Miami', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(340, 'Port Orange', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(340, 'Port Orange', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(341, 'Hollywood', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(341, 'Hollywood', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(342, 'Deltona', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(342, 'Deltona', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(343, 'Delray Beach', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(343, 'Delray Beach', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(344, 'Miramar', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(344, 'Miramar', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(345, 'Jupiter', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(345, 'Jupiter', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(346, 'West Palm Beach', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(346, 'West Palm Beach', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(347, 'Pembroke Pines', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(347, 'Pembroke Pines', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(348, 'Orlando', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(348, 'Orlando', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(349, 'Margate', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(349, 'Margate', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(350, 'Boca Raton', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(350, 'Boca Raton', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(351, 'Lakeland', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(351, 'Lakeland', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(352, 'Tampa', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(352, 'Tampa', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(353, 'Palm Coast', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(353, 'Palm Coast', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(354, 'Kissimmee', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(354, 'Kissimmee', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(355, 'Boynton Beach', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(355, 'Boynton Beach', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(356, 'Hialeah', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(356, 'Hialeah', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(357, 'Ormond Beach', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(357, 'Ormond Beach', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(358, 'Apopka', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(358, 'Apopka', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(359, 'Pensacola', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(359, 'Pensacola', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(360, 'Melbourne', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(360, 'Melbourne', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(361, 'Tallahassee', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(361, 'Tallahassee', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(362, 'Sanford', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(362, 'Sanford', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(363, 'Plantation', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(363, 'Plantation', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(364, 'North Miami', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(364, 'North Miami', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(365, 'Coral Gables', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(365, 'Coral Gables', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(366, 'Daytona Beach', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(366, 'Daytona Beach', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(367, 'Nashua', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(367, 'Nashua', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(368, 'League City', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(368, 'League City', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(369, 'Round Rock', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(369, 'Round Rock', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(370, 'Edinburg', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(370, 'Edinburg', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(371, 'San Antonio', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(371, 'San Antonio', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(372, 'Mesquite', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(372, 'Mesquite', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(373, 'Mcallen', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(373, 'Mcallen', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(374, 'Laredo', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(374, 'Laredo', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(375, 'Grapevine', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(375, 'Grapevine', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(376, 'Missouri City', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(376, 'Missouri City', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(377, 'Garland', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(377, 'Garland', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(378, 'Irving', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(378, 'Irving', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(379, 'Houston', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(379, 'Houston', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(380, 'Carrollton', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(380, 'Carrollton', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(381, 'Mansfield', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(381, 'Mansfield', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(382, 'Huntsville', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(382, 'Huntsville', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(383, 'Pearland', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(383, 'Pearland', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(384, 'Austin', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(384, 'Austin', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(385, 'Harlingen', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(385, 'Harlingen', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(386, 'Brownsville', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(386, 'Brownsville', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(387, 'Tyler', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(387, 'Tyler', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(388, 'Deer Park', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(388, 'Deer Park', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(389, 'Coppell', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(389, 'Coppell', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(390, 'Amarillo', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(390, 'Amarillo', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(391, 'Corpus Christi', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(391, 'Corpus Christi', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(392, 'San Marcos', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(392, 'San Marcos', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(393, 'San Angelo', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(393, 'San Angelo', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(394, 'Bryan', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(394, 'Bryan', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(395, 'El Paso', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(395, 'El Paso', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(396, 'Frisco', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(396, 'Frisco', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(397, 'Allen', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(397, 'Allen', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(398, 'The Colony', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(398, 'The Colony', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(399, 'Beaumont', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(399, 'Beaumont', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(400, 'Richardson', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(400, 'Richardson', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(401, 'Waco', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(401, 'Waco', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(402, 'Bedford', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(402, 'Bedford', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(403, 'Port Arthur', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(403, 'Port Arthur', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(404, 'Conroe', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(404, 'Conroe', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(405, 'Grand Prairie', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(405, 'Grand Prairie', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(406, 'College Station', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(406, 'College Station', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(407, 'Fort Worth', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(407, 'Fort Worth', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(408, 'Baytown', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(408, 'Baytown', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(409, 'Haltom City', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(409, 'Haltom City', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(410, 'Odessa', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(410, 'Odessa', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(411, 'Pharr', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(411, 'Pharr', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(412, 'Texas City', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(412, 'Texas City', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(413, 'Cedar Hill', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(413, 'Cedar Hill', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(414, 'Keller', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(414, 'Keller', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(415, 'Plano', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(415, 'Plano', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(416, 'Dallas', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(416, 'Dallas', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(417, 'Abilene', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(417, 'Abilene', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(418, 'Lubbock', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(418, 'Lubbock', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(419, 'Highland Park', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(419, 'Highland Park', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(420, 'Glenview', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(420, 'Glenview', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(421, 'Oswego', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(421, 'Oswego', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(422, 'Bolingbrook', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(422, 'Bolingbrook', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(423, 'Chicago', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(423, 'Chicago', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(424, 'Evanston', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(424, 'Evanston', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(425, 'Arlington Heights', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(425, 'Arlington Heights', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(426, 'Normal', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(426, 'Normal', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(427, 'Aurora', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(427, 'Aurora', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(428, 'Romeoville', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(428, 'Romeoville', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(429, 'Buffalo Grove', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(429, 'Buffalo Grove', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(430, 'Frankfort', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(430, 'Frankfort', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(431, 'Palatine', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(431, 'Palatine', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(432, 'Park Ridge', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(432, 'Park Ridge', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(433, 'Naperville', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(433, 'Naperville', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(434, 'Orland Park', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(434, 'Orland Park', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(435, 'Rockford', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(435, 'Rockford', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(436, 'Carol Stream', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(436, 'Carol Stream', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(437, 'Tinley Park', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(437, 'Tinley Park', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(438, 'Des Plaines', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(438, 'Des Plaines', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(439, 'Woodstock', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(439, 'Woodstock', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(440, 'Decatur', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(440, 'Decatur', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(441, 'Skokie', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(441, 'Skokie', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(442, 'Champaign', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(442, 'Champaign', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(443, 'Elmhurst', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(443, 'Elmhurst', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(444, 'Marietta', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(444, 'Marietta', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(445, 'Sandy Springs', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(445, 'Sandy Springs', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(446, 'Atlanta', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(446, 'Atlanta', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(447, 'Warner Robins', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(447, 'Warner Robins', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(448, 'Roswell', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(448, 'Roswell', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(449, 'East Point', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(449, 'East Point', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(450, 'Macon', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(450, 'Macon', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(451, 'Athens', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(451, 'Athens', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(452, 'Akron', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(452, 'Akron', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(453, 'Grove City', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(453, 'Grove City', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(454, 'Parma', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(454, 'Parma', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(455, 'Cincinnati', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(455, 'Cincinnati', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(456, 'Mentor', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(456, 'Mentor', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(457, 'Medina', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(457, 'Medina', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(458, 'Cleveland', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(458, 'Cleveland', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(459, 'Hamilton', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(459, 'Hamilton', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(460, 'Cuyahoga Falls', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(460, 'Cuyahoga Falls', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(461, 'Lorain', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(461, 'Lorain', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(462, 'Mason', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(462, 'Mason', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(463, 'Toledo', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(463, 'Toledo', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(464, 'Elyria', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(464, 'Elyria', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(465, 'Rockville', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(465, 'Rockville', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(466, 'Baltimore', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(466, 'Baltimore', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(467, 'Gaithersburg', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(467, 'Gaithersburg', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(468, 'Laurel', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(468, 'Laurel', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(469, 'Clinton', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(469, 'Clinton', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(470, 'Hagerstown', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(470, 'Hagerstown', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(471, 'Oklahoma City', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(471, 'Oklahoma City', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(472, 'Broken Arrow', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(472, 'Broken Arrow', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(473, 'Norman', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(473, 'Norman', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(474, 'Edmond', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(474, 'Edmond', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(475, 'Tulsa', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(475, 'Tulsa', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(476, 'Muskogee', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(476, 'Muskogee', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(477, 'Lawton', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(477, 'Lawton', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(478, 'Gresham', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(478, 'Gresham', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(479, 'Hillsboro', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(479, 'Hillsboro', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(480, 'Portland', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(480, 'Portland', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(481, 'Eugene', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(481, 'Eugene', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(482, 'Medford', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(482, 'Medford', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(483, 'Tigard', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(483, 'Tigard', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(484, 'Layton', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(484, 'Layton', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(485, 'Pleasant Grove', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(485, 'Pleasant Grove', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(486, 'Logan', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(486, 'Logan', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(487, 'Draper', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(487, 'Draper', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(488, 'Provo', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(488, 'Provo', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(489, 'Salt Lake City', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(489, 'Salt Lake City', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(490, 'West Jordan', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(490, 'West Jordan', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(491, 'Lehi', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(491, 'Lehi', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(492, 'Orem', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(492, 'Orem', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(493, 'Tuscaloosa', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(493, 'Tuscaloosa', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(494, 'Montgomery', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(494, 'Montgomery', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(495, 'Hoover', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(495, 'Hoover', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(496, 'Mobile', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(496, 'Mobile', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(497, 'Pine Bluff', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(497, 'Pine Bluff', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(498, 'Springdale', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(498, 'Springdale', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(499, 'Rogers', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(499, 'Rogers', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(500, 'Jonesboro', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(500, 'Jonesboro', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(501, 'Texarkana', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(501, 'Texarkana', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(502, 'Conway', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(502, 'Conway', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(503, 'Hot Springs', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(503, 'Hot Springs', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(504, 'Little Rock', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(504, 'Little Rock', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(505, 'Longmont', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(505, 'Longmont', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(506, 'Englewood', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(506, 'Englewood', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(507, 'Fort Collins', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(507, 'Fort Collins', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(508, 'Parker', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(508, 'Parker', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(509, 'Pueblo', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(509, 'Pueblo', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(510, 'Littleton', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(510, 'Littleton', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(511, 'Commerce City', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(511, 'Commerce City', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(512, 'Arvada', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(512, 'Arvada', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(513, 'Broomfield', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(513, 'Broomfield', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(514, 'Thornton', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(514, 'Thornton', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(515, 'Greeley', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(515, 'Greeley', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(516, 'Loveland', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(516, 'Loveland', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(517, 'Denver', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(517, 'Denver', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(518, 'Colorado Springs', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(518, 'Colorado Springs', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(519, 'Fargo', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(519, 'Fargo', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(520, 'Madison', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(520, 'Madison', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(521, 'West Allis', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(521, 'West Allis', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(522, 'Superior', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(522, 'Superior', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(523, 'Green Bay', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(523, 'Green Bay', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(524, 'Eau Claire', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(524, 'Eau Claire', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(525, 'La Crosse', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(525, 'La Crosse', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(526, 'Wausau', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(526, 'Wausau', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(527, 'Sheboygan', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(527, 'Sheboygan', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(528, 'Waukesha', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(528, 'Waukesha', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(529, 'Appleton', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(529, 'Appleton', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(530, 'Milwaukee', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(530, 'Milwaukee', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(531, 'Kenosha', NULL, 0, 0, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+	(531, 'Kenosha', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
+INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
+	(532, NULL, NULL, NULL, NULL, '2020-01-17 21:28:02', '2020-01-17 21:28:02');
+INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
+	(533, NULL, NULL, NULL, NULL, '2020-01-17 21:29:56', '2020-01-17 21:29:56');
 /*!40000 ALTER TABLE `cities` ENABLE KEYS */;
 
 -- Dumping structure for table myretail_users.contacts
@@ -1150,7 +1154,7 @@ CREATE TABLE IF NOT EXISTS `countries` (
   KEY `key_code` (`code`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
 
--- Dumping data for table myretail_users.countries: ~0 rows (approximately)
+-- Dumping data for table myretail_users.countries: ~1 rows (approximately)
 DELETE FROM `countries`;
 /*!40000 ALTER TABLE `countries` DISABLE KEYS */;
 INSERT INTO `countries` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
