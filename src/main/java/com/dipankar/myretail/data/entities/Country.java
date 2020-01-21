@@ -27,11 +27,11 @@ public class Country implements Serializable {
     @Size(min = 2, max = 120, message = "Country name should be between 2 and 120 characters")
     private String name;
 
-    @ManyToMany
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinTable(
-            name = "country_state_map",
-            joinColumns = {@JoinColumn(name = "country")},
-            inverseJoinColumns = {@JoinColumn(name = "state")}
+            name = "country_state_city_map",
+            joinColumns = {@JoinColumn(name = "country", referencedColumnName = "id")},
+            inverseJoinColumns = {@JoinColumn(name = "state", referencedColumnName = "id")}
     )
     private List<State> state;
 }
