@@ -75,4 +75,7 @@ public class ContactDetails implements Serializable {
 
     @Column(name = "is_primary")
     private String isPrimary;
+
+    @Column(name = "user")
+    private Long userId;
 }

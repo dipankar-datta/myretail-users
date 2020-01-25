@@ -44,12 +44,7 @@ public class User implements Serializable {
     @Column(name = "updation_time")
     private LocalDateTime updationTime;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "userId")
     @NotEmpty(message = "User's contact details is required")
-    @JoinTable(
-            name = "user_contact",
-            joinColumns = {@JoinColumn(name = "user")},
-            inverseJoinColumns = {@JoinColumn(name = "contact")}
-            )
     private List<ContactDetails> contactDetails;
 }

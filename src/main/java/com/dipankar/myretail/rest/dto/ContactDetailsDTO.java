@@ -59,6 +59,9 @@ public class ContactDetailsDTO {
     @JsonProperty("isPrimary")
     private String isPrimary;
 
+    @JsonProperty("user")
+    private Long userId;
+
     public ContactDetails toEntity() {
         return new ContactDetails(
                 id,
@@ -71,7 +74,8 @@ public class ContactDetailsDTO {
                 null,
                 null,
                 null,
-                isPrimary
+                isPrimary,
+                userId
         );
     }
 
@@ -87,7 +91,8 @@ public class ContactDetailsDTO {
                 contactDetails.getCountry().getId(),
                 contactDetails.getState().getId(),
                 contactDetails.getCity().getId(),
-                contactDetails.getIsPrimary()
+                contactDetails.getIsPrimary(),
+                contactDetails.getUserId()
         );
     }
 }
