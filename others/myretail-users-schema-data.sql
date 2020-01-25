@@ -1100,10 +1100,6 @@ INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creatio
 	(530, 'Milwaukee', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
 INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
 	(531, 'Kenosha', NULL, NULL, NULL, '2020-01-16 21:07:59', '2020-01-16 21:07:59');
-INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(532, NULL, NULL, NULL, NULL, '2020-01-17 21:28:02', '2020-01-17 21:28:02');
-INSERT INTO `cities` (`id`, `name`, `code`, `created_by`, `updated_by`, `creation_time`, `updation_time`) VALUES
-	(533, NULL, NULL, NULL, NULL, '2020-01-17 21:29:56', '2020-01-17 21:29:56');
 /*!40000 ALTER TABLE `cities` ENABLE KEYS */;
 
 -- Dumping structure for table myretail_users.contacts
@@ -1118,10 +1114,11 @@ CREATE TABLE IF NOT EXISTS `contacts` (
   `address_line_2` varchar(200) DEFAULT '0',
   `postal_code` varchar(30) DEFAULT '0',
   `public_id` varchar(50) DEFAULT NULL,
-  `created_by` varchar(50) DEFAULT NULL,
-  `updated_by` varchar(50) DEFAULT NULL,
+  `created_by` bigint(50) DEFAULT NULL,
+  `updated_by` bigint(50) DEFAULT NULL,
   `creation_time` datetime DEFAULT CURRENT_TIMESTAMP,
   `updation_time` datetime DEFAULT CURRENT_TIMESTAMP,
+  `user` bigint(50) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `id` (`id`),
   KEY `FK__countries` (`country`),
@@ -1143,8 +1140,8 @@ CREATE TABLE IF NOT EXISTS `countries` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(120) DEFAULT NULL,
   `code` varchar(20) DEFAULT NULL,
-  `created_by` varchar(50) DEFAULT NULL,
-  `updated_by` varchar(50) DEFAULT NULL,
+  `created_by` bigint(50) DEFAULT NULL,
+  `updated_by` bigint(50) DEFAULT NULL,
   `creation_time` datetime DEFAULT CURRENT_TIMESTAMP,
   `updation_time` datetime DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
@@ -1170,9 +1167,8 @@ CREATE TABLE IF NOT EXISTS `country_state_city_map` (
   KEY `FK_country_state_city_map_countries` (`country`),
   KEY `FK_country_state_city_map_states` (`state`),
   KEY `FK_country_state_city_map_cities` (`city`),
-  CONSTRAINT `country_state_city_map_ibfk_1` FOREIGN KEY (`city`) REFERENCES `cities` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `country_state_city_map_ibfk_2` FOREIGN KEY (`country`) REFERENCES `countries` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `country_state_city_map_ibfk_3` FOREIGN KEY (`state`) REFERENCES `states` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+  CONSTRAINT `FK_country_state_city_map_cities` FOREIGN KEY (`city`) REFERENCES `cities` (`id`),
+  CONSTRAINT `FK_country_state_city_map_states` FOREIGN KEY (`state`) REFERENCES `states` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
 
 -- Dumping data for table myretail_users.country_state_city_map: ~604 rows (approximately)
@@ -2395,11 +2391,11 @@ CREATE TABLE IF NOT EXISTS `logins` (
   `password` varchar(50) DEFAULT NULL,
   `comments` varchar(255) DEFAULT NULL,
   `temporary_password` varchar(50) DEFAULT '0',
-  `user` int(11) DEFAULT NULL,
+  `user` bigint(20) DEFAULT NULL,
   `status` int(1) DEFAULT NULL,
   `last_active` datetime DEFAULT NULL,
-  `created_by` varchar(50) DEFAULT NULL,
-  `updated_by` varchar(50) DEFAULT NULL,
+  `created_by` bigint(50) DEFAULT NULL,
+  `updated_by` bigint(50) DEFAULT NULL,
   `creation_time` datetime DEFAULT CURRENT_TIMESTAMP,
   `updation_time` datetime DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
@@ -2435,8 +2431,8 @@ CREATE TABLE IF NOT EXISTS `roles` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `code` varchar(10) DEFAULT NULL,
   `name` varchar(160) DEFAULT NULL,
-  `created_by` varchar(50) DEFAULT NULL,
-  `updated_by` varchar(50) DEFAULT NULL,
+  `created_by` bigint(50) DEFAULT NULL,
+  `updated_by` bigint(50) DEFAULT NULL,
   `creation_time` datetime DEFAULT CURRENT_TIMESTAMP,
   `updation_time` datetime DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
@@ -2465,8 +2461,8 @@ CREATE TABLE IF NOT EXISTS `states` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(120) DEFAULT NULL,
   `code` varchar(20) DEFAULT NULL,
-  `created_by` varchar(50) DEFAULT NULL,
-  `updated_by` varchar(50) DEFAULT NULL,
+  `created_by` bigint(50) DEFAULT NULL,
+  `updated_by` bigint(50) DEFAULT NULL,
   `creation_time` datetime DEFAULT CURRENT_TIMESTAMP,
   `updation_time` datetime DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
@@ -2590,8 +2586,8 @@ CREATE TABLE IF NOT EXISTS `users` (
   `last_name` varchar(80) DEFAULT NULL,
   `public_id` varchar(200) DEFAULT NULL,
   `role` int(11) DEFAULT '0',
-  `created_by` varchar(50) DEFAULT NULL,
-  `updated_by` varchar(50) DEFAULT NULL,
+  `created_by` bigint(50) DEFAULT NULL,
+  `updated_by` bigint(50) DEFAULT NULL,
   `creation_time` datetime DEFAULT CURRENT_TIMESTAMP,
   `updation_time` datetime DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
@@ -2607,20 +2603,6 @@ CREATE TABLE IF NOT EXISTS `users` (
 DELETE FROM `users`;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
-
--- Dumping structure for table myretail_users.user_contact_map
-DROP TABLE IF EXISTS `user_contact_map`;
-CREATE TABLE IF NOT EXISTS `user_contact_map` (
-  `user` bigint(50) DEFAULT NULL,
-  `contact` bigint(50) DEFAULT NULL,
-  KEY `FK__users_map` (`user`),
-  KEY `FK__contact_details` (`contact`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
-
--- Dumping data for table myretail_users.user_contact_map: ~0 rows (approximately)
-DELETE FROM `user_contact_map`;
-/*!40000 ALTER TABLE `user_contact_map` DISABLE KEYS */;
-/*!40000 ALTER TABLE `user_contact_map` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;

@@ -1,0 +1,223 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-3.8.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+    <changeSet author="datta (generated)" id="1579969348878-1">
+        <createTable tableName="cities">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(120)">
+                <constraints unique="true"/>
+            </column>
+            <column name="code" type="VARCHAR(20)">
+                <constraints unique="true"/>
+            </column>
+            <column name="created_by" type="BIGINT"/>
+            <column name="updated_by" type="BIGINT"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="creation_time" type="datetime"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="updation_time" type="datetime"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="datta (generated)" id="1579969348878-2">
+        <createTable tableName="contacts">
+            <column defaultValueNumeric="0" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column defaultValue="" name="email" type="VARCHAR(30)"/>
+            <column defaultValueNumeric="0" name="country" type="INT"/>
+            <column defaultValueNumeric="0" name="state" type="INT"/>
+            <column defaultValueNumeric="0" name="city" type="INT"/>
+            <column defaultValue="0" name="address_line_1" type="VARCHAR(200)"/>
+            <column defaultValue="0" name="address_line_2" type="VARCHAR(200)"/>
+            <column defaultValue="0" name="postal_code" type="VARCHAR(30)"/>
+            <column name="public_id" type="VARCHAR(50)"/>
+            <column name="created_by" type="BIGINT"/>
+            <column name="updated_by" type="BIGINT"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="creation_time" type="datetime"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="updation_time" type="datetime"/>
+            <column name="user" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="datta (generated)" id="1579969348878-3">
+        <createTable tableName="countries">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(120)">
+                <constraints unique="true"/>
+            </column>
+            <column name="code" type="VARCHAR(20)">
+                <constraints unique="true"/>
+            </column>
+            <column name="created_by" type="BIGINT"/>
+            <column name="updated_by" type="BIGINT"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="creation_time" type="datetime"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="updation_time" type="datetime"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="datta (generated)" id="1579969348878-4">
+        <createTable tableName="country_state_city_map">
+            <column name="country" type="INT"/>
+            <column name="state" type="INT"/>
+            <column name="city" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="datta (generated)" id="1579969348878-5">
+        <createTable tableName="logins">
+            <column defaultValueNumeric="0" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="password" type="VARCHAR(50)"/>
+            <column name="comments" type="VARCHAR(255)"/>
+            <column defaultValue="0" name="temporary_password" type="VARCHAR(50)"/>
+            <column name="user" type="BIGINT"/>
+            <column name="status" type="INT"/>
+            <column name="last_active" type="datetime"/>
+            <column name="created_by" type="BIGINT"/>
+            <column name="updated_by" type="BIGINT"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="creation_time" type="datetime"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="updation_time" type="datetime"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="datta (generated)" id="1579969348878-6">
+        <createTable tableName="passwords">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueNumeric="0" name="login" type="BIGINT"/>
+            <column name="password" type="VARCHAR(80)"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="creation_date" type="datetime"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="datta (generated)" id="1579969348878-7">
+        <createTable tableName="roles">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="code" type="VARCHAR(10)">
+                <constraints unique="true"/>
+            </column>
+            <column name="name" type="VARCHAR(160)">
+                <constraints unique="true"/>
+            </column>
+            <column name="created_by" type="BIGINT"/>
+            <column name="updated_by" type="BIGINT"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="creation_time" type="datetime"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="updation_time" type="datetime"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="datta (generated)" id="1579969348878-8">
+        <createTable tableName="states">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(120)">
+                <constraints unique="true"/>
+            </column>
+            <column name="code" type="VARCHAR(20)">
+                <constraints unique="true"/>
+            </column>
+            <column name="created_by" type="BIGINT"/>
+            <column name="updated_by" type="BIGINT"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="creation_time" type="datetime"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="updation_time" type="datetime"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="datta (generated)" id="1579969348878-9">
+        <createTable tableName="users">
+            <column defaultValueNumeric="0" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="code" type="VARCHAR(30)">
+                <constraints unique="true"/>
+            </column>
+            <column name="primary_contact" type="BIGINT"/>
+            <column name="first_name" type="VARCHAR(80)"/>
+            <column name="last_name" type="VARCHAR(80)"/>
+            <column name="public_id" type="VARCHAR(200)"/>
+            <column defaultValueNumeric="0" name="role" type="INT"/>
+            <column name="created_by" type="BIGINT"/>
+            <column name="updated_by" type="BIGINT"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="creation_time" type="datetime"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="updation_time" type="datetime"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="datta (generated)" id="1579969348878-10">
+        <createIndex indexName="FK_Passwords_Login" tableName="passwords">
+            <column defaultValueNumeric="0" name="login"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="datta (generated)" id="1579969348878-11">
+        <createIndex indexName="FK_Users_Contact" tableName="users">
+            <column name="primary_contact"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="datta (generated)" id="1579969348878-12">
+        <createIndex indexName="FK__cities" tableName="contacts">
+            <column defaultValueNumeric="0" name="city"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="datta (generated)" id="1579969348878-13">
+        <createIndex indexName="FK__countries" tableName="contacts">
+            <column defaultValueNumeric="0" name="country"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="datta (generated)" id="1579969348878-14">
+        <createIndex indexName="FK__states" tableName="contacts">
+            <column defaultValueNumeric="0" name="state"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="datta (generated)" id="1579969348878-15">
+        <createIndex indexName="FK_country_state_city_map_cities" tableName="country_state_city_map">
+            <column name="city"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="datta (generated)" id="1579969348878-16">
+        <createIndex indexName="FK_country_state_city_map_countries" tableName="country_state_city_map">
+            <column name="country"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="datta (generated)" id="1579969348878-17">
+        <createIndex indexName="FK_country_state_city_map_states" tableName="country_state_city_map">
+            <column name="state"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="datta (generated)" id="1579969348878-18">
+        <createIndex indexName="FK_login_users" tableName="logins">
+            <column name="user"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="datta (generated)" id="1579969348878-19">
+        <createIndex indexName="FK_users_roles" tableName="users">
+            <column defaultValueNumeric="0" name="role"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="datta (generated)" id="1579969348878-20">
+        <createIndex indexName="id" tableName="passwords">
+            <column name="id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="datta (generated)" id="1579969348878-21">
+        <addForeignKeyConstraint baseColumnNames="city" baseTableName="contacts" constraintName="FK_ContactDetails_City" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="id" referencedTableName="cities" validate="true"/>
+    </changeSet>
+    <changeSet author="datta (generated)" id="1579969348878-22">
+        <addForeignKeyConstraint baseColumnNames="country" baseTableName="contacts" constraintName="FK_ContactDetails_Country" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="id" referencedTableName="countries" validate="true"/>
+    </changeSet>
+    <changeSet author="datta (generated)" id="1579969348878-23">
+        <addForeignKeyConstraint baseColumnNames="state" baseTableName="contacts" constraintName="FK_ContactDetails_State" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="id" referencedTableName="states" validate="true"/>
+    </changeSet>
+    <changeSet author="datta (generated)" id="1579969348878-24">
+        <addForeignKeyConstraint baseColumnNames="login" baseTableName="passwords" constraintName="FK_Passwords_Login" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="id" referencedTableName="logins" validate="true"/>
+    </changeSet>
+    <changeSet author="datta (generated)" id="1579969348878-25">
+        <addForeignKeyConstraint baseColumnNames="primary_contact" baseTableName="users" constraintName="FK_Users_Contact" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="id" referencedTableName="contacts" validate="true"/>
+    </changeSet>
+    <changeSet author="datta (generated)" id="1579969348878-26">
+        <addForeignKeyConstraint baseColumnNames="role" baseTableName="users" constraintName="FK_Users_Role" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="id" referencedTableName="roles" validate="true"/>
+    </changeSet>
+    <changeSet author="datta (generated)" id="1579969348878-27">
+        <addForeignKeyConstraint baseColumnNames="city" baseTableName="country_state_city_map" constraintName="FK_country_state_city_map_cities" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="id" referencedTableName="cities" validate="true"/>
+    </changeSet>
+    <changeSet author="datta (generated)" id="1579969348878-28">
+        <addForeignKeyConstraint baseColumnNames="state" baseTableName="country_state_city_map" constraintName="FK_country_state_city_map_states" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="id" referencedTableName="states" validate="true"/>
+    </changeSet>
+</databaseChangeLog>

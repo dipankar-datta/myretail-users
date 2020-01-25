@@ -1,0 +1,171 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-3.8.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+    <changeSet author="Dipankar Datta" id="0.0.1-1">
+        <preConditions onFail="MARK_RAN">
+            <not><tableExists tableName="cities" /></not>
+        </preConditions>
+        <createTable tableName="cities">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(120)">
+                <constraints unique="true"/>
+            </column>
+            <column name="code" type="VARCHAR(20)">
+                <constraints unique="true"/>
+            </column>
+            <column name="created_by" type="BIGINT"/>
+            <column name="updated_by" type="BIGINT"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="creation_time" type="datetime"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="updation_time" type="datetime"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Dipankar Datta" id="0.0.1-2">
+        <preConditions onFail="MARK_RAN">
+            <not><tableExists tableName="contacts" /></not>
+        </preConditions>
+        <createTable tableName="contacts">
+            <column defaultValueNumeric="0" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column defaultValue="" name="email" type="VARCHAR(30)"/>
+            <column defaultValueNumeric="0" name="country" type="INT"/>
+            <column defaultValueNumeric="0" name="state" type="INT"/>
+            <column defaultValueNumeric="0" name="city" type="INT"/>
+            <column defaultValue="0" name="address_line_1" type="VARCHAR(200)"/>
+            <column defaultValue="0" name="address_line_2" type="VARCHAR(200)"/>
+            <column defaultValue="0" name="postal_code" type="VARCHAR(30)"/>
+            <column name="public_id" type="VARCHAR(50)"/>
+            <column name="created_by" type="BIGINT"/>
+            <column name="updated_by" type="BIGINT"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="creation_time" type="datetime"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="updation_time" type="datetime"/>
+            <column name="user" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Dipankar Datta" id="0.0.1-3">
+        <preConditions onFail="MARK_RAN">
+            <not><tableExists tableName="countries" /></not>
+        </preConditions>
+        <createTable tableName="countries">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(120)">
+                <constraints unique="true"/>
+            </column>
+            <column name="code" type="VARCHAR(20)">
+                <constraints unique="true"/>
+            </column>
+            <column name="created_by" type="BIGINT"/>
+            <column name="updated_by" type="BIGINT"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="creation_time" type="datetime"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="updation_time" type="datetime"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Dipankar Datta" id="0.0.1-4">
+        <preConditions onFail="MARK_RAN">
+            <not><tableExists tableName="country_state_city_map" /></not>
+        </preConditions>
+        <createTable tableName="country_state_city_map">
+            <column name="country" type="INT"/>
+            <column name="state" type="INT"/>
+            <column name="city" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Dipankar Datta" id="0.0.1-5">
+        <preConditions onFail="MARK_RAN">
+            <not><tableExists tableName="logins" /></not>
+        </preConditions>
+        <createTable tableName="logins">
+            <column defaultValueNumeric="0" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="password" type="VARCHAR(50)"/>
+            <column name="comments" type="VARCHAR(255)"/>
+            <column defaultValue="0" name="temporary_password" type="VARCHAR(50)"/>
+            <column name="user" type="BIGINT"/>
+            <column name="status" type="INT"/>
+            <column name="last_active" type="datetime"/>
+            <column name="created_by" type="BIGINT"/>
+            <column name="updated_by" type="BIGINT"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="creation_time" type="datetime"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="updation_time" type="datetime"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Dipankar Datta" id="0.0.1-6">
+        <preConditions onFail="MARK_RAN">
+            <not><tableExists tableName="passwords" /></not>
+        </preConditions>
+        <createTable tableName="passwords">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueNumeric="0" name="login" type="BIGINT"/>
+            <column name="password" type="VARCHAR(80)"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="creation_date" type="datetime"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Dipankar Datta" id="0.0.1-7">
+        <preConditions onFail="MARK_RAN">
+            <not><tableExists tableName="roles" /></not>
+        </preConditions>
+        <createTable tableName="roles">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="code" type="VARCHAR(10)">
+                <constraints unique="true"/>
+            </column>
+            <column name="name" type="VARCHAR(160)">
+                <constraints unique="true"/>
+            </column>
+            <column name="created_by" type="BIGINT"/>
+            <column name="updated_by" type="BIGINT"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="creation_time" type="datetime"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="updation_time" type="datetime"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Dipankar Datta" id="0.0.1-8">
+        <preConditions onFail="MARK_RAN">
+            <not><tableExists tableName="states" /></not>
+        </preConditions>
+        <createTable tableName="states">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(120)">
+                <constraints unique="true"/>
+            </column>
+            <column name="code" type="VARCHAR(20)">
+                <constraints unique="true"/>
+            </column>
+            <column name="created_by" type="BIGINT"/>
+            <column name="updated_by" type="BIGINT"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="creation_time" type="datetime"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="updation_time" type="datetime"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Dipankar Datta" id="0.0.1-9">
+        <preConditions onFail="MARK_RAN">
+            <not><tableExists tableName="users" /></not>
+        </preConditions>
+        <createTable tableName="users">
+            <column defaultValueNumeric="0" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="code" type="VARCHAR(30)">
+                <constraints unique="true"/>
+            </column>
+            <column name="primary_contact" type="BIGINT"/>
+            <column name="first_name" type="VARCHAR(80)"/>
+            <column name="last_name" type="VARCHAR(80)"/>
+            <column name="public_id" type="VARCHAR(200)"/>
+            <column defaultValueNumeric="0" name="role" type="INT"/>
+            <column name="created_by" type="BIGINT"/>
+            <column name="updated_by" type="BIGINT"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="creation_time" type="datetime"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="updation_time" type="datetime"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

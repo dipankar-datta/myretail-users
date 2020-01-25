@@ -49,10 +49,11 @@ CREATE TABLE IF NOT EXISTS `contacts` (
   `address_line_2` varchar(200) DEFAULT '0',
   `postal_code` varchar(30) DEFAULT '0',
   `public_id` varchar(50) DEFAULT NULL,
-  `created_by` varchar(50) DEFAULT NULL,
-  `updated_by` varchar(50) DEFAULT NULL,
+  `created_by` bigint(50) DEFAULT NULL,
+  `updated_by` bigint(50) DEFAULT NULL,
   `creation_time` datetime DEFAULT CURRENT_TIMESTAMP,
   `updation_time` datetime DEFAULT CURRENT_TIMESTAMP,
+  `user` bigint(50) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `id` (`id`),
   KEY `FK__countries` (`country`),
@@ -71,8 +72,8 @@ CREATE TABLE IF NOT EXISTS `countries` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(120) DEFAULT NULL,
   `code` varchar(20) DEFAULT NULL,
-  `created_by` varchar(50) DEFAULT NULL,
-  `updated_by` varchar(50) DEFAULT NULL,
+  `created_by` bigint(50) DEFAULT NULL,
+  `updated_by` bigint(50) DEFAULT NULL,
   `creation_time` datetime DEFAULT CURRENT_TIMESTAMP,
   `updation_time` datetime DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
@@ -93,9 +94,8 @@ CREATE TABLE IF NOT EXISTS `country_state_city_map` (
   KEY `FK_country_state_city_map_countries` (`country`),
   KEY `FK_country_state_city_map_states` (`state`),
   KEY `FK_country_state_city_map_cities` (`city`),
-  CONSTRAINT `country_state_city_map_ibfk_1` FOREIGN KEY (`city`) REFERENCES `cities` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `country_state_city_map_ibfk_2` FOREIGN KEY (`country`) REFERENCES `countries` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `country_state_city_map_ibfk_3` FOREIGN KEY (`state`) REFERENCES `states` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+  CONSTRAINT `FK_country_state_city_map_cities` FOREIGN KEY (`city`) REFERENCES `cities` (`id`),
+  CONSTRAINT `FK_country_state_city_map_states` FOREIGN KEY (`state`) REFERENCES `states` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
 
 -- Data exporting was unselected.
@@ -107,11 +107,11 @@ CREATE TABLE IF NOT EXISTS `logins` (
   `password` varchar(50) DEFAULT NULL,
   `comments` varchar(255) DEFAULT NULL,
   `temporary_password` varchar(50) DEFAULT '0',
-  `user` int(11) DEFAULT NULL,
+  `user` bigint(20) DEFAULT NULL,
   `status` int(1) DEFAULT NULL,
   `last_active` datetime DEFAULT NULL,
-  `created_by` varchar(50) DEFAULT NULL,
-  `updated_by` varchar(50) DEFAULT NULL,
+  `created_by` bigint(50) DEFAULT NULL,
+  `updated_by` bigint(50) DEFAULT NULL,
   `creation_time` datetime DEFAULT CURRENT_TIMESTAMP,
   `updation_time` datetime DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
@@ -141,8 +141,8 @@ CREATE TABLE IF NOT EXISTS `roles` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `code` varchar(10) DEFAULT NULL,
   `name` varchar(160) DEFAULT NULL,
-  `created_by` varchar(50) DEFAULT NULL,
-  `updated_by` varchar(50) DEFAULT NULL,
+  `created_by` bigint(50) DEFAULT NULL,
+  `updated_by` bigint(50) DEFAULT NULL,
   `creation_time` datetime DEFAULT CURRENT_TIMESTAMP,
   `updation_time` datetime DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
@@ -160,8 +160,8 @@ CREATE TABLE IF NOT EXISTS `states` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(120) DEFAULT NULL,
   `code` varchar(20) DEFAULT NULL,
-  `created_by` varchar(50) DEFAULT NULL,
-  `updated_by` varchar(50) DEFAULT NULL,
+  `created_by` bigint(50) DEFAULT NULL,
+  `updated_by` bigint(50) DEFAULT NULL,
   `creation_time` datetime DEFAULT CURRENT_TIMESTAMP,
   `updation_time` datetime DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
@@ -184,8 +184,8 @@ CREATE TABLE IF NOT EXISTS `users` (
   `last_name` varchar(80) DEFAULT NULL,
   `public_id` varchar(200) DEFAULT NULL,
   `role` int(11) DEFAULT '0',
-  `created_by` varchar(50) DEFAULT NULL,
-  `updated_by` varchar(50) DEFAULT NULL,
+  `created_by` bigint(50) DEFAULT NULL,
+  `updated_by` bigint(50) DEFAULT NULL,
   `creation_time` datetime DEFAULT CURRENT_TIMESTAMP,
   `updation_time` datetime DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
@@ -195,17 +195,6 @@ CREATE TABLE IF NOT EXISTS `users` (
   KEY `FK_Users_Contact` (`primary_contact`),
   CONSTRAINT `FK_Users_Contact` FOREIGN KEY (`primary_contact`) REFERENCES `contacts` (`id`),
   CONSTRAINT `FK_Users_Role` FOREIGN KEY (`role`) REFERENCES `roles` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
-
--- Data exporting was unselected.
-
--- Dumping structure for table myretail_users.user_contact_map
-DROP TABLE IF EXISTS `user_contact_map`;
-CREATE TABLE IF NOT EXISTS `user_contact_map` (
-  `user` bigint(50) DEFAULT NULL,
-  `contact` bigint(50) DEFAULT NULL,
-  KEY `FK__users_map` (`user`),
-  KEY `FK__contact_details` (`contact`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
 
 -- Data exporting was unselected.
