@@ -20,6 +20,7 @@ import java.util.List;
 public class User implements Serializable {
 
     @Id
+    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
@@ -46,5 +47,5 @@ public class User implements Serializable {
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "userId")
     @NotEmpty(message = "User's contact details is required")
-    private List<ContactDetails> contactDetails;
+    private List<Contact> contacts;
 }

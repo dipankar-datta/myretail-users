@@ -7,6 +7,6 @@ public class ExceptionsUtility {
     }
 
     public static void exceptionIfIdDoesntExistForUpdate(Object id) {
-        if (id != null) throw new CustomException("Cannot update resource without identifier");
+        if (id == null) throw new CustomException("Cannot update resource without identifier");
     }
 }

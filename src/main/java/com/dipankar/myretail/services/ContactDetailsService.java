@@ -1,8 +1,8 @@
 package com.dipankar.myretail.services;
 
-import com.dipankar.myretail.data.entities.ContactDetails;
+import com.dipankar.myretail.data.entities.Contact;
 
-public interface ContactDetailsService extends BasicCrudService<ContactDetails> {
+public interface ContactDetailsService extends BasicCrudService<Contact> {
 
 
 }

@@ -1,6 +1,5 @@
 package com.dipankar.myretail.rest.dto;
 
-import com.dipankar.myretail.data.entities.ContactDetails;
 import com.dipankar.myretail.data.entities.User;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -41,7 +40,7 @@ public class UserDTO implements Serializable {
 
     @NotEmpty(message = "User's contact details is required")
     @JsonProperty("contacts")
-    private List<ContactDetailsDTO> contacts;
+    private List<ContactDTO> contacts;
 
     public static UserDTO entityToDto(User u) {
         return new UserDTO(
@@ -49,7 +48,7 @@ public class UserDTO implements Serializable {
                 u.getFirstName(),
                 u.getLastName(),
                 u.getRole().getId(),
-                u.getContactDetails().stream().map(ContactDetailsDTO::entityToDto).collect(Collectors.toList())
+                u.getContacts().stream().map(ContactDTO::entityToDto).collect(Collectors.toList())
         );
     }
 
@@ -61,7 +60,7 @@ public class UserDTO implements Serializable {
                 null,
                 null,
                 LocalDateTime.now(),
-                contacts.stream().map(contactDetailsDTO -> contactDetailsDTO.toEntity()).collect(Collectors.toList())
+                contacts.stream().map(contactDTO -> contactDTO.toEntity()).collect(Collectors.toList())
         );
     }
 }

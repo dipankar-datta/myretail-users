@@ -1,14 +1,13 @@
 package com.dipankar.myretail.rest.controllers;
 
 import com.dipankar.myretail.data.entities.City;
+import com.dipankar.myretail.exceptions.ExceptionsUtility;
 import com.dipankar.myretail.services.CityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseStatus;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 import java.util.Set;
 
@@ -25,4 +24,26 @@ public class CityController {
     public List<City> list() {
         return cityService.list();
     }
+
+    @PostMapping
+    @ResponseStatus(HttpStatus.OK)
+    public void create(@RequestBody @Valid City city) {
+        ExceptionsUtility.exceptionIfIdExistsForCreate(city);
+        cityService.create(city);
+    }
+
+    @PutMapping
+    @ResponseStatus(HttpStatus.OK)
+    public void update(@RequestBody @Valid City city) {
+        ExceptionsUtility.exceptionIfIdDoesntExistForUpdate(city);
+        cityService.update(city);
+    }
+
+    @DeleteMapping
+    @ResponseStatus(HttpStatus.OK)
+    public void delete(@RequestBody @Valid City city) {
+        ExceptionsUtility.exceptionIfIdDoesntExistForUpdate(city);
+        cityService.delete(city);
+    }
+
 }

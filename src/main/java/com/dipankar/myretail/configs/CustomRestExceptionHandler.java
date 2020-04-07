@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
 
-import javax.validation.ConstraintViolationException;
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @ControllerAdvice
 public class CustomRestExceptionHandler {
@@ -28,22 +28,35 @@ public class CustomRestExceptionHandler {
         return new ResponseEntity(ex.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
-    @ExceptionHandler(ConstraintViolationException.class)
+    @ExceptionHandler(javax.validation.ConstraintViolationException.class)
     public final ResponseEntity<Object> constraintViolationExceptionHandler(
-            ConstraintViolationException ex, WebRequest request) {
-        List<String> errorMessages = new ArrayList<>();
-        ex.getConstraintViolations()
-                .forEach(constraintViolation -> {errorMessages.add(constraintViolation.getMessage());});
-        ErrorResponse errorResponse = new ErrorResponse("Validation Error", errorMessages);
+            javax.validation.ConstraintViolationException ex, WebRequest request) {
+        List<String> errorMessages =
+                ex.getConstraintViolations()
+                        .stream()
+                        .map(constraintViolation -> constraintViolation.getMessage())
+                        .collect(Collectors.toList());
+        ErrorResponse errorResponse = new ErrorResponse("Validation Failed", errorMessages);
+        return new ResponseEntity(errorResponse, HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(org.hibernate.exception.ConstraintViolationException.class)
+    public final ResponseEntity<Object> jpaConstraintViolationExceptionHandler(
+            org.hibernate.exception.ConstraintViolationException ex, WebRequest request) {
+        ErrorResponse errorResponse = new ErrorResponse("Database Error",
+                Arrays.asList("Invalid data. Please verify your data."));
         return new ResponseEntity(errorResponse, HttpStatus.BAD_REQUEST);
     }
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
-    public final ResponseEntity<Object> methodArgumentNotValidExceptionHandler(
-            MethodArgumentNotValidException ex, WebRequest request) {
-        List<String> errorMessages = new ArrayList<>();
-        ex.getBindingResult().getFieldErrors()
-                .forEach(constraintViolation -> {errorMessages.add(constraintViolation.getDefaultMessage());});
+    public final ResponseEntity<Object> methodArgumentNotValidExceptionHandler(MethodArgumentNotValidException ex,
+                                                                               WebRequest request) {
+        List<String> errorMessages =
+                ex.getBindingResult()
+                        .getFieldErrors()
+                        .stream()
+                        .map(constraintViolation -> constraintViolation.getDefaultMessage())
+                        .collect(Collectors.toList());
         ErrorResponse errorResponse = new ErrorResponse("Validation Error", errorMessages);
         return new ResponseEntity(errorResponse, HttpStatus.BAD_REQUEST);
     }

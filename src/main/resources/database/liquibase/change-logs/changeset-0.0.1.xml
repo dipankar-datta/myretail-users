@@ -168,4 +168,43 @@
             <column defaultValueComputed="CURRENT_TIMESTAMP" name="updation_time" type="datetime"/>
         </createTable>
     </changeSet>
+    <changeSet author="Dipankar Datta" id="0.0.1-10">
+        <addAutoIncrement
+                          columnDataType="BIGINT"
+                          columnName="id"
+                          incrementBy="1"
+                          startWith="1"
+                          tableName="contacts"/>
+    </changeSet>
+    <changeSet author="Dipankar Datta" id="0.0.1-11">
+        <addAutoIncrement
+                columnDataType="BIGINT"
+                columnName="id"
+                incrementBy="1"
+                startWith="1"
+                tableName="logins"/>
+    </changeSet>
+    <changeSet author="Dipankar Datta" id="0.0.1-12">
+        <addAutoIncrement
+                columnDataType="BIGINT"
+                columnName="id"
+                incrementBy="1"
+                startWith="1"
+                tableName="users"/>
+    </changeSet>
+    <changeSet author="Dipankar Datta" id="0.0.1-13">
+        <addColumn tableName="contacts">
+            <column name="is_primary" type="varchar(5)"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="Dipankar Datta" id="0.0.1-14">
+        <addColumn tableName="contacts">
+            <column name="primary_contact_number" type="varchar(30)"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="Dipankar Datta" id="0.0.1-15">
+        <addColumn tableName="contacts">
+            <column name="secondary_contact_number" type="varchar(30)"/>
+        </addColumn>
+    </changeSet>
 </databaseChangeLog>

@@ -1,9 +1,9 @@
 package com.dipankar.myretail.rest.controllers;
 
-import com.dipankar.myretail.data.entities.ContactDetails;
+import com.dipankar.myretail.data.entities.Contact;
 import com.dipankar.myretail.data.entities.User;
 import com.dipankar.myretail.exceptions.ExceptionsUtility;
-import com.dipankar.myretail.rest.dto.ContactDetailsDTO;
+import com.dipankar.myretail.rest.dto.ContactDTO;
 import com.dipankar.myretail.rest.dto.UserDTO;
 import com.dipankar.myretail.services.ContactDetailsService;
 import com.dipankar.myretail.services.UserService;
@@ -64,31 +64,31 @@ public class UserController {
 
     @GetMapping("/{userId}/contacts")
     @ResponseStatus(HttpStatus.OK)
-    public List<ContactDetailsDTO> getUserContacts(@PathVariable Long userId) {
+    public List<ContactDTO> getUserContacts(@PathVariable Long userId) {
         Optional<User> userOptional = userService.getById(userId);
         return userOptional.isPresent() ?
                 userOptional
                         .get()
-                        .getContactDetails()
+                        .getContacts()
                         .stream()
-                        .map(ContactDetailsDTO::entityToDto)
+                        .map(ContactDTO::entityToDto)
                         .collect(Collectors.toList())
                 : null;
     }
 
     @PutMapping("/{userId}/contacts")
     @ResponseStatus(HttpStatus.OK)
-    public ContactDetailsDTO updateUserContacts(@PathVariable Long userId, @RequestBody ContactDetailsDTO contactDetailsDTO) {
-        contactDetailsDTO.setId(userId);
-        ContactDetails contactDetails = contactDetailsService.update(contactDetailsDTO.toEntity());
-       return ContactDetailsDTO.entityToDto(contactDetails);
+    public ContactDTO updateUserContacts(@PathVariable Long userId, @RequestBody ContactDTO contactDTO) {
+        contactDTO.setId(userId);
+        Contact contact = contactDetailsService.update(contactDTO.toEntity());
+       return ContactDTO.entityToDto(contact);
     }
 
     @PostMapping("/{userId}/contacts")
     @ResponseStatus(HttpStatus.OK)
-    public ContactDetailsDTO createUserContact(@PathVariable Long userId, @RequestBody ContactDetailsDTO contactDetailsDTO) {
-        contactDetailsDTO.setId(userId);
-        ContactDetails contactDetails = contactDetailsService.create(contactDetailsDTO.toEntity());
-        return ContactDetailsDTO.entityToDto(contactDetails);
+    public ContactDTO createUserContact(@PathVariable Long userId, @RequestBody ContactDTO contactDTO) {
+        contactDTO.setId(userId);
+        Contact contact = contactDetailsService.create(contactDTO.toEntity());
+        return ContactDTO.entityToDto(contact);
     }
 }

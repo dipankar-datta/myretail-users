@@ -16,25 +16,25 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "contact_details")
+@Table(name = "contacts")
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class ContactDetails implements Serializable {
+public class Contact implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @JsonProperty("id")
     private Long id;
 
-    @Column(name = "primary_contact")
+    @Column(name = "primary_contact_number")
     @NotEmpty(message = "Primary contact is required")
-    @Size(min = 8, max = 30, message = "Primary contact should be between 8 to 30 characters")
+    @Size(min = 8, max = 30, message = "Primary contact number should be between 8 to 30 characters")
     @JsonProperty("primaryContact")
-    private String primaryContact;
+    private String primaryContactNumber;
 
-    @Column(name = "secondary_contact")
-    @Size(min = 8, max = 30, message = "Secondary contact should be between 8 to 30 characters")
+    @Column(name = "secondary_contact_number")
+    @Size(min = 8, max = 30, message = "Secondary contact number should be between 8 to 30 characters")
     @JsonProperty("secondaryContact")
-    private String secondaryContact;
+    private String secondaryContactNumber;
 
     @Column(name = "email")
     @NotEmpty(message = "Email is required")

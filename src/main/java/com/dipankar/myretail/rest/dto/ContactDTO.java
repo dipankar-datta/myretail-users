@@ -13,19 +13,19 @@ import javax.validation.constraints.Size;
 @Data
 @AllArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class ContactDetailsDTO {
+public class ContactDTO {
 
     @JsonProperty("id")
     private Long id;
 
     @NotEmpty(message = "Primary contact is required")
-    @Size(min = 8, max = 30, message = "Primary contact should be between 8 to 30 characters")
-    @JsonProperty("primaryContact")
-    private String primaryContact;
+    @Size(min = 8, max = 30, message = "Primary contact number should be between 8 to 30 characters")
+    @JsonProperty("primaryContactNumber")
+    private String primaryContactNumber;
 
-    @Size(min = 8, max = 30, message = "Secondary contact should be between 8 to 30 characters")
-    @JsonProperty("secondaryContact")
-    private String secondaryContact;
+    @Size(min = 8, max = 30, message = "Secondary contact number should be between 8 to 30 characters")
+    @JsonProperty("secondaryContactNumber")
+    private String secondaryContactNumber;
 
     @NotEmpty(message = "Email is required")
     @Size(min = 8, max = 30, message = "Email should be between 8 to 30 characters")
@@ -62,11 +62,11 @@ public class ContactDetailsDTO {
     @JsonProperty("user")
     private Long userId;
 
-    public ContactDetails toEntity() {
-        return new ContactDetails(
+    public Contact toEntity() {
+        return new Contact(
                 id,
-                primaryContact,
-                secondaryContact,
+                primaryContactNumber,
+                secondaryContactNumber,
                 email,
                 addressLine1,
                 addressLine2,
@@ -79,20 +79,20 @@ public class ContactDetailsDTO {
         );
     }
 
-    public static ContactDetailsDTO entityToDto(ContactDetails contactDetails) {
-        return new ContactDetailsDTO(
-                contactDetails.getId(),
-                contactDetails.getPrimaryContact(),
-                contactDetails.getSecondaryContact(),
-                contactDetails.getEmail(),
-                contactDetails.getAddressLine1(),
-                contactDetails.getAddressLine2(),
-                contactDetails.getPostalCode(),
-                contactDetails.getCountry().getId(),
-                contactDetails.getState().getId(),
-                contactDetails.getCity().getId(),
-                contactDetails.getIsPrimary(),
-                contactDetails.getUserId()
+    public static ContactDTO entityToDto(Contact contact) {
+        return new ContactDTO(
+                contact.getId(),
+                contact.getPrimaryContactNumber(),
+                contact.getSecondaryContactNumber(),
+                contact.getEmail(),
+                contact.getAddressLine1(),
+                contact.getAddressLine2(),
+                contact.getPostalCode(),
+                contact.getCountry().getId(),
+                contact.getState().getId(),
+                contact.getCity().getId(),
+                contact.getIsPrimary(),
+                contact.getUserId()
         );
     }
 }

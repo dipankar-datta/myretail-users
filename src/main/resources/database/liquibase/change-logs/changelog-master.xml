@@ -9,6 +9,5 @@
     http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-3.8.xsd ">
 
     <include file="database/liquibase/change-logs/changeset-0.0.1.xml" />
-    <include file="database/liquibase/configs/changeset-generated-data-dump.xml" />
 
 </databaseChangeLog>
