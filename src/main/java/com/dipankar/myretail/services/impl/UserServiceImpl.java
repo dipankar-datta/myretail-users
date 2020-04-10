@@ -49,11 +49,7 @@ public class UserServiceImpl  implements UserService {
         Role role = roleRepository.getOne(dto.getRoleId());
         User user = dto.toEntity();
         user.setRole(role);
-        LocalDateTime localDateTime = LocalDateTime.now();
-        user.setCreationTime(localDateTime);
-        user.setUpdationTime(localDateTime);
         user = userRepository.save(user);
-
         Long userId = user.getId();
         List<Contact> savedContacts =
                 dto.getContacts()

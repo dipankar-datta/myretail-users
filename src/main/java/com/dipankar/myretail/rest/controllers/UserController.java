@@ -5,7 +5,7 @@ import com.dipankar.myretail.data.entities.User;
 import com.dipankar.myretail.exceptions.ExceptionsUtility;
 import com.dipankar.myretail.rest.dto.ContactDTO;
 import com.dipankar.myretail.rest.dto.UserDTO;
-import com.dipankar.myretail.services.ContactDetailsService;
+import com.dipankar.myretail.services.ContactService;
 import com.dipankar.myretail.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -25,7 +25,7 @@ public class UserController {
     private UserService userService;
 
     @Autowired
-    private ContactDetailsService contactDetailsService;
+    private ContactService contactService;
 
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
@@ -79,16 +79,22 @@ public class UserController {
     @PutMapping("/{userId}/contacts")
     @ResponseStatus(HttpStatus.OK)
     public ContactDTO updateUserContacts(@PathVariable Long userId, @RequestBody ContactDTO contactDTO) {
-        contactDTO.setId(userId);
-        Contact contact = contactDetailsService.update(contactDTO.toEntity());
-       return ContactDTO.entityToDto(contact);
+        Contact contact = contactService.updateDTO(contactDTO);
+        return ContactDTO.entityToDto(contact);
     }
 
     @PostMapping("/{userId}/contacts")
     @ResponseStatus(HttpStatus.OK)
     public ContactDTO createUserContact(@PathVariable Long userId, @RequestBody ContactDTO contactDTO) {
         contactDTO.setId(userId);
-        Contact contact = contactDetailsService.create(contactDTO.toEntity());
+        Contact contact = contactService.create(contactDTO.toEntity());
         return ContactDTO.entityToDto(contact);
+    }
+
+    @DeleteMapping("/{userId}/contacts/{contactId}")
+    @ResponseStatus(HttpStatus.OK)
+    public boolean deleteUserContact(@PathVariable Long userId, @PathVariable Long contactId) {
+        contactService.deleteById(contactId);
+        return true;
     }
 }

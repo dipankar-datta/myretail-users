@@ -1,6 +1,5 @@
 package com.dipankar.myretail.rest.controllers;
 
-import com.dipankar.myretail.data.entities.City;
 import com.dipankar.myretail.data.entities.Country;
 import com.dipankar.myretail.exceptions.ExceptionsUtility;
 import com.dipankar.myretail.services.CountryService;

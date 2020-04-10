@@ -1,5 +1,6 @@
 package com.dipankar.myretail.rest.dto;
 
+import com.dipankar.myretail.data.entities.Role;
 import com.dipankar.myretail.data.entities.User;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -53,14 +54,12 @@ public class UserDTO implements Serializable {
     }
 
     public User toEntity() {
-        return new User(
-                id,
-                firstName,
-                lastName,
-                null,
-                null,
-                LocalDateTime.now(),
-                contacts.stream().map(contactDTO -> contactDTO.toEntity()).collect(Collectors.toList())
-        );
+        return User.builder()
+                .id(id)
+                .firstName(firstName)
+                .lastName(lastName)
+                .contacts(contacts.stream().map(contactDTO -> contactDTO.toEntity()).collect(Collectors.toList()))
+                .role(Role.builder().id(roleId).build())
+                .build();
     }
 }

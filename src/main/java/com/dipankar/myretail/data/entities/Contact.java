@@ -4,26 +4,24 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
 
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
-import java.io.Serializable;
 
+@EqualsAndHashCode(callSuper = true)
+@SuperBuilder
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "contacts")
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Contact implements Serializable {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @JsonProperty("id")
-    private Long id;
+public class Contact extends BaseEntity {
 
     @Column(name = "primary_contact_number")
     @NotEmpty(message = "Primary contact is required")

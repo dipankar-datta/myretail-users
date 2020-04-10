@@ -1,25 +1,30 @@
 package com.dipankar.myretail.data.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
-import java.io.Serializable;
-import java.util.List;
+import java.util.Set;
 
+@EqualsAndHashCode(callSuper = true)
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "countries")
-public class Country implements Serializable {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+@SuperBuilder
+public class Country extends BaseEntity {
 
     @Column(name = "code")
     @NotEmpty(message = "Country code is required")
     @Size(min = 2, max = 20, message = "Country code should be between 2 and 20 characters")
+    @JsonIgnore
     private String code;
 
     @Column(name = "name")
@@ -33,5 +38,5 @@ public class Country implements Serializable {
             joinColumns = {@JoinColumn(name = "country", referencedColumnName = "id")},
             inverseJoinColumns = {@JoinColumn(name = "state", referencedColumnName = "id")}
     )
-    private List<State> state;
+    private Set<State> states;
 }

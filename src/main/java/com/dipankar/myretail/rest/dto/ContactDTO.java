@@ -63,20 +63,20 @@ public class ContactDTO {
     private Long userId;
 
     public Contact toEntity() {
-        return new Contact(
-                id,
-                primaryContactNumber,
-                secondaryContactNumber,
-                email,
-                addressLine1,
-                addressLine2,
-                postalCode,
-                null,
-                null,
-                null,
-                isPrimary,
-                userId
-        );
+
+        return Contact.builder()
+                .id(id)
+                .primaryContactNumber(primaryContactNumber)
+                .secondaryContactNumber(secondaryContactNumber)
+                .email(email)
+                .addressLine1(addressLine1)
+                .addressLine2(addressLine2)
+                .postalCode(postalCode)
+                .country(Country.builder().id(countryId).build())
+                .state(State.builder().id(stateId).build())
+                .city(City.builder().id(cityId).build())
+                .userId(userId)
+                .build();
     }
 
     public static ContactDTO entityToDto(Contact contact) {

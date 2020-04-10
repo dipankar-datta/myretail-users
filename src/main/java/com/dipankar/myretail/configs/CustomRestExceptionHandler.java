@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
 
+import javax.persistence.EntityNotFoundException;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -43,7 +44,7 @@ public class CustomRestExceptionHandler {
     @ExceptionHandler(org.hibernate.exception.ConstraintViolationException.class)
     public final ResponseEntity<Object> jpaConstraintViolationExceptionHandler(
             org.hibernate.exception.ConstraintViolationException ex, WebRequest request) {
-        ErrorResponse errorResponse = new ErrorResponse("Database Error",
+        ErrorResponse errorResponse = new ErrorResponse("Data Error",
                 Arrays.asList("Invalid data. Please verify your data."));
         return new ResponseEntity(errorResponse, HttpStatus.BAD_REQUEST);
     }
@@ -59,6 +60,14 @@ public class CustomRestExceptionHandler {
                         .collect(Collectors.toList());
         ErrorResponse errorResponse = new ErrorResponse("Validation Error", errorMessages);
         return new ResponseEntity(errorResponse, HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(EntityNotFoundException.class)
+    public final ResponseEntity<Object> entityNotFoundExceptionHandler(EntityNotFoundException ex,
+                                                                               WebRequest request) {
+        ErrorResponse errorResponse = new ErrorResponse("Data Error",
+                Arrays.asList("Requested data not available"));
+        return new ResponseEntity(errorResponse, HttpStatus.NOT_FOUND);
     }
 
 }
